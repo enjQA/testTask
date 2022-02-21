@@ -1,0 +1,968 @@
+{
+  "id": "66e2c1a0-81c1-4929-a21d-b8ff5656ad98",
+  "version": "2.0",
+  "name": "taskMountainMike",
+  "url": "https://www.mountainmikespizza.com/",
+  "tests": [
+    {
+      "id": "ba141898-a5ff-4bb7-8cc4-67a72623a315",
+      "name": "pizzaCheckout",
+      "commands": [
+        {
+          "id": "efb28590-a43a-49f2-9c4c-6249f2d172df",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "355a3850-a440-49b4-858a-c6ab2f3794ae",
+          "comment": "",
+          "command": "click",
+          "target": "css=div>ul>.menu-item-132 > a",
+          "targets": [
+            [
+              "css=.nav_links .menu-item-132 > a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Locations')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='primary_nav']/div[2]/div[2]/ul/li[2]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'https://www.mountainmikespizza.com/locations/')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[2]/a",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "11ff9b77-6aa2-48aa-a420-315075ae8e10",
+          "comment": "",
+          "command": "click",
+          "target": "css=[href*=\"pizza-alameda\"]",
+          "targets": [],
+          "value": "",
+          "opensWindow": true,
+          "windowHandleName": "newWindow",
+          "windowTimeout": 10000
+        },
+        {
+          "id": "9ef63038-d148-4114-aa77-0921bff9f40a",
+          "comment": "",
+          "command": "selectWindow",
+          "target": "handle=${newWindow}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1b6f7d24-6119-4a80-9735-6af8a694cafb",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnLogin_Guest",
+          "targets": [
+            [
+              "id=btnLogin_Guest",
+              "id"
+            ],
+            [
+              "css=#btnLogin_Guest",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='btnLogin_Guest']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//dialog[@id='dia_Login']/div[2]/div[2]/div[3]/button",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[2]/div[3]/button",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "1e17cf39-dcd5-4bda-a3b9-389bde205be0",
+          "comment": "",
+          "command": "click",
+          "target": "id=spanOrderType_2_Name",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1bc5fe9d-2e7a-4e2c-b866-f50b0adbec45",
+          "comment": "",
+          "command": "click",
+          "target": "id=lblOrderType_FD_Now",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3aede80d-15f2-4cd9-99e6-53ae9c3668ea",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnOrderType_Continue",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "22d6e23e-8a8d-4616-a990-51bb6892ef9e",
+          "comment": "",
+          "command": "click",
+          "target": "id=aCat_2",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e25fe4c7-94e8-4949-81db-0d9f262ba588",
+          "comment": "",
+          "command": "click",
+          "target": "css=#divMenuItem_1804>div>div.gridCol2>button",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "133b4622-d734-4d4a-9f0b-998691bb9d78",
+      "name": "getPizzaName",
+      "commands": [
+        {
+          "id": "04b58a0c-e6ea-4e23-a35c-19ad8dd04753",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d032bf9d-a5d5-4541-82a5-20b705083dd2",
+          "comment": "",
+          "command": "click",
+          "target": "css=div>ul>.menu-item-132 > a",
+          "targets": [
+            [
+              "css=.nav_links .menu-item-132 > a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Locations')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='primary_nav']/div[2]/div[2]/ul/li[2]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'https://www.mountainmikespizza.com/locations/')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[2]/a",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "afc6f184-ea22-4a05-aaec-9717615d2b29",
+          "comment": "",
+          "command": "click",
+          "target": "css=[href*=\"pizza-alameda\"]",
+          "targets": [],
+          "value": "",
+          "opensWindow": true,
+          "windowHandleName": "newWindow",
+          "windowTimeout": 10000
+        },
+        {
+          "id": "3fb7e192-2c5d-43db-9c17-753e03c2dd6d",
+          "comment": "",
+          "command": "selectWindow",
+          "target": "handle=${newWindow}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b8d7c0e4-d387-4b54-8422-b473dbf6a222",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnLogin_Guest",
+          "targets": [
+            [
+              "id=btnLogin_Guest",
+              "id"
+            ],
+            [
+              "css=#btnLogin_Guest",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='btnLogin_Guest']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//dialog[@id='dia_Login']/div[2]/div[2]/div[3]/button",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[2]/div[3]/button",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "e7f3f171-abd0-4b37-b76d-3743c063db27",
+          "comment": "",
+          "command": "click",
+          "target": "id=spanOrderType_2_Name",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6ac033e3-44fa-48e7-892b-e61517d50172",
+          "comment": "",
+          "command": "click",
+          "target": "id=lblOrderType_FD_Now",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "31df31d6-c7a7-47e0-89fd-0970aace5c38",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnOrderType_Continue",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a5cbf86d-69f0-4c29-9124-4306bc8de84d",
+          "comment": "",
+          "command": "click",
+          "target": "id=aCat_2",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "67881916-1959-4d11-a980-64508200483a",
+          "comment": "",
+          "command": "storeText",
+          "target": "css=#divMenuItem_1804>div>span",
+          "targets": [],
+          "value": "pizzaName"
+        },
+        {
+          "id": "214ea325-fe85-48bb-9690-29695c986536",
+          "comment": "",
+          "command": "echo",
+          "target": "${pizzaName}",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "7988669e-5b94-4a85-982f-470a6b4d515f",
+      "name": "getAnotherPizzaName",
+      "commands": [
+        {
+          "id": "f5d68830-2b95-493a-a936-24df318b1ab5",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7b7c9013-56b9-4457-b5b3-87052b5ebf8f",
+          "comment": "",
+          "command": "click",
+          "target": "css=div>ul>.menu-item-132 > a",
+          "targets": [
+            [
+              "css=.nav_links .menu-item-132 > a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Locations')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='primary_nav']/div[2]/div[2]/ul/li[2]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'https://www.mountainmikespizza.com/locations/')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[2]/a",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "30c2bd4c-559f-4b3f-be1b-0147f866a2fc",
+          "comment": "",
+          "command": "click",
+          "target": "css=[href*=\"pizza-alameda\"]",
+          "targets": [],
+          "value": "",
+          "opensWindow": true,
+          "windowHandleName": "newWindow",
+          "windowTimeout": 10000
+        },
+        {
+          "id": "6e74683a-7c32-4757-95ba-319662276f0e",
+          "comment": "",
+          "command": "selectWindow",
+          "target": "handle=${newWindow}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4e3d77f4-2a10-4a31-bd8d-0534caee23cd",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnLogin_Guest",
+          "targets": [
+            [
+              "id=btnLogin_Guest",
+              "id"
+            ],
+            [
+              "css=#btnLogin_Guest",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='btnLogin_Guest']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//dialog[@id='dia_Login']/div[2]/div[2]/div[3]/button",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[2]/div[3]/button",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "075b462c-87f7-43cc-8cee-fcfddde1e72d",
+          "comment": "",
+          "command": "click",
+          "target": "id=spanOrderType_2_Name",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0812a444-c3cf-4692-bd96-15b8a141eb33",
+          "comment": "",
+          "command": "click",
+          "target": "id=lblOrderType_FD_Now",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "73ce3e4c-58f7-4245-8622-7a282c0c0303",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnOrderType_Continue",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "58e3c226-0d40-41cb-9ea1-9ffa622c6e45",
+          "comment": "",
+          "command": "click",
+          "target": "id=aCat_2",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "349e7751-21c3-46d0-ac6c-0e35f479cc4b",
+          "comment": "",
+          "command": "storeText",
+          "target": "css=#divMenuItem_1803>div>span",
+          "targets": [],
+          "value": "pizzaName"
+        },
+        {
+          "id": "4f385fec-4666-4282-b941-31c65b864a2f",
+          "comment": "",
+          "command": "echo",
+          "target": "${pizzaName}",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "9dac4fbe-7c2a-4f03-9f57-4e283aaa24cb",
+      "name": "getAllNames",
+      "commands": [
+        {
+          "id": "3c09662b-9f5d-4f26-a989-83294000b987",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ec0d56e1-50d7-46a5-98b4-242256be83e2",
+          "comment": "",
+          "command": "click",
+          "target": "css=div>ul>.menu-item-132 > a",
+          "targets": [
+            [
+              "css=.nav_links .menu-item-132 > a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Locations')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='primary_nav']/div[2]/div[2]/ul/li[2]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'https://www.mountainmikespizza.com/locations/')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[2]/a",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d80bcdb8-ff82-4ddd-810f-8465e3da727d",
+          "comment": "",
+          "command": "click",
+          "target": "css=[href*=\"pizza-alameda\"]",
+          "targets": [],
+          "value": "",
+          "opensWindow": true,
+          "windowHandleName": "newWindow",
+          "windowTimeout": 10000
+        },
+        {
+          "id": "27259852-3662-4227-bf7b-e77a0d2527a9",
+          "comment": "",
+          "command": "selectWindow",
+          "target": "handle=${newWindow}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6caa7451-a512-41c0-b0ee-b889eea6a99d",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnLogin_Guest",
+          "targets": [
+            [
+              "id=btnLogin_Guest",
+              "id"
+            ],
+            [
+              "css=#btnLogin_Guest",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='btnLogin_Guest']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//dialog[@id='dia_Login']/div[2]/div[2]/div[3]/button",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[2]/div[3]/button",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d35c09d4-615e-429d-8594-1ead3364c97c",
+          "comment": "",
+          "command": "click",
+          "target": "id=spanOrderType_2_Name",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e7a476ba-e048-46ef-bb91-7eb633decdc3",
+          "comment": "",
+          "command": "click",
+          "target": "id=lblOrderType_FD_Now",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c7d4447a-1232-43d6-9bf7-5923fb9ed213",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnOrderType_Continue",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3c32a46c-4d1b-4afd-8bef-159dfde86337",
+          "comment": "",
+          "command": "click",
+          "target": "id=aCat_2",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "579bd9bd-8e9f-4c5e-92b8-beb423a81bbe",
+          "comment": "",
+          "command": "store",
+          "target": "0",
+          "targets": [],
+          "value": "startValue"
+        },
+        {
+          "id": "d352b9be-310c-46ac-9f3e-078791657c77",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return document.querySelectorAll('.vMenuItem').length",
+          "targets": [],
+          "value": "itemsQuantity"
+        },
+        {
+          "id": "f111752c-c974-416c-bd66-c5bf63bc92e4",
+          "comment": "",
+          "command": "while",
+          "target": "${startValue} < ${itemsQuantity}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1b1c964c-5f4a-4222-9d0f-9e94ff96d47e",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return document.querySelectorAll('.vMenuItem>div>span')[${startValue}].textContent",
+          "targets": [],
+          "value": "outputValue"
+        },
+        {
+          "id": "90e3deb5-5597-4c9b-a461-c42802c31a7f",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return Math.floor(${startValue})+1",
+          "targets": [],
+          "value": "startValue"
+        },
+        {
+          "id": "80929bce-9837-4c75-a511-40fe9839efd0",
+          "comment": "",
+          "command": "echo",
+          "target": "${outputValue}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fa5e4ba7-940f-4ff7-abea-450e93067bd8",
+          "comment": "",
+          "command": "end",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "b65b9938-4951-4751-b0dc-a1dbac9103de",
+      "name": "getAllIngredients",
+      "commands": [
+        {
+          "id": "0f88b1cb-f203-4826-8825-393ca78038f5",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "18fd2552-2919-422f-befb-ce96f7933c60",
+          "comment": "",
+          "command": "click",
+          "target": "css=div>ul>.menu-item-132 > a",
+          "targets": [
+            [
+              "css=.nav_links .menu-item-132 > a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Locations')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='primary_nav']/div[2]/div[2]/ul/li[2]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'https://www.mountainmikespizza.com/locations/')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[2]/a",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "a1c570e6-cd5c-4d81-8377-a8714ae3a473",
+          "comment": "",
+          "command": "click",
+          "target": "css=[href*=\"pizza-alameda\"]",
+          "targets": [],
+          "value": "",
+          "opensWindow": true,
+          "windowHandleName": "newWindow",
+          "windowTimeout": 10000
+        },
+        {
+          "id": "231d7e22-8923-4d87-9f99-0580f2b09f95",
+          "comment": "",
+          "command": "selectWindow",
+          "target": "handle=${newWindow}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f1507236-9636-4167-9238-726ee3fb6c3a",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnLogin_Guest",
+          "targets": [
+            [
+              "id=btnLogin_Guest",
+              "id"
+            ],
+            [
+              "css=#btnLogin_Guest",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='btnLogin_Guest']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//dialog[@id='dia_Login']/div[2]/div[2]/div[3]/button",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[2]/div[3]/button",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "cf2e9819-42da-4020-8c82-59d330594fa7",
+          "comment": "",
+          "command": "click",
+          "target": "id=spanOrderType_2_Name",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "54e653ad-6fff-437c-be12-672b8e74878e",
+          "comment": "",
+          "command": "click",
+          "target": "id=lblOrderType_FD_Now",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "cdac81c8-88d5-4a6b-9b28-3f223d82c986",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnOrderType_Continue",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0afc0bd1-838e-4398-baad-90f671c441e9",
+          "comment": "",
+          "command": "click",
+          "target": "id=aCat_2",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "029d8d6c-18db-416a-9b40-916d63f47481",
+          "comment": "",
+          "command": "store",
+          "target": "0",
+          "targets": [],
+          "value": "startValue"
+        },
+        {
+          "id": "52d09802-1453-4814-b63d-cf3f84d8a035",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return document.querySelectorAll('.vMenuItem').length",
+          "targets": [],
+          "value": "itemsQuantity"
+        },
+        {
+          "id": "e70d2740-2069-40b9-868a-d097d60bfffa",
+          "comment": "",
+          "command": "while",
+          "target": "${startValue} < ${itemsQuantity}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "51db870d-de1b-47e0-893e-40cb2996caf3",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return document.querySelectorAll('.vMenuItem>div>p')[${startValue}].textContent",
+          "targets": [],
+          "value": "outputValue"
+        },
+        {
+          "id": "812409b1-04b5-4791-a67e-1a00b49ede25",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return Math.floor(${startValue})+1",
+          "targets": [],
+          "value": "startValue"
+        },
+        {
+          "id": "afaa8cd2-73f9-4e1c-af4d-dc7499712ff2",
+          "comment": "",
+          "command": "echo",
+          "target": "${outputValue}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "336f833b-25b0-496f-9d14-310b3165190a",
+          "comment": "",
+          "command": "end",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "402304cf-9c10-4ee9-bc8d-cc33d43eafef",
+      "name": "getAllProperties",
+      "commands": [
+        {
+          "id": "5a857081-eea8-4b9d-9d79-f62233af8f9e",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7203553f-aba2-4098-b25d-15482a7bca8b",
+          "comment": "",
+          "command": "click",
+          "target": "css=div>ul>.menu-item-132 > a",
+          "targets": [
+            [
+              "css=.nav_links .menu-item-132 > a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Locations')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='primary_nav']/div[2]/div[2]/ul/li[2]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'https://www.mountainmikespizza.com/locations/')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[2]/a",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "ac7eb991-5122-4934-83b3-6b0c7a7a2dce",
+          "comment": "",
+          "command": "click",
+          "target": "css=[href*=\"pizza-alameda\"]",
+          "targets": [],
+          "value": "",
+          "opensWindow": true,
+          "windowHandleName": "newWindow",
+          "windowTimeout": 10000
+        },
+        {
+          "id": "b67d5344-7888-43b7-87c4-41ec038dbf77",
+          "comment": "",
+          "command": "selectWindow",
+          "target": "handle=${newWindow}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5782602a-ee58-4fd4-8add-5f933cf32325",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnLogin_Guest",
+          "targets": [
+            [
+              "id=btnLogin_Guest",
+              "id"
+            ],
+            [
+              "css=#btnLogin_Guest",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='btnLogin_Guest']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//dialog[@id='dia_Login']/div[2]/div[2]/div[3]/button",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[2]/div[3]/button",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "090d1fda-d3eb-48fb-8065-ffdb365ae725",
+          "comment": "",
+          "command": "click",
+          "target": "id=spanOrderType_2_Name",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4a99ebca-f8b7-495b-8531-a225f96d1b2a",
+          "comment": "",
+          "command": "click",
+          "target": "id=lblOrderType_FD_Now",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "744e2ca9-7d0f-438f-8172-8e053cd46da7",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnOrderType_Continue",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0b1b2f49-ed8b-4c76-924b-d20f10283e0e",
+          "comment": "",
+          "command": "click",
+          "target": "id=aCat_2",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "774f06b2-b32a-4af5-9c66-5c7471927a27",
+          "comment": "",
+          "command": "store",
+          "target": "0",
+          "targets": [],
+          "value": "startValue"
+        },
+        {
+          "id": "82e70828-8ec5-4b23-8fdd-abaf8d9aebce",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return document.querySelectorAll('.vMenuItem>div.m-lr>[for*=\"Siz\"]+select>option').length",
+          "targets": [],
+          "value": "itemsQuantity"
+        },
+        {
+          "id": "b16637bf-5297-4110-80a5-b6e1afb0b948",
+          "comment": "",
+          "command": "while",
+          "target": "${startValue} < ${itemsQuantity}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ffff6245-2399-49d8-a97e-794172eb999a",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return document.querySelectorAll('.vMenuItem>div.m-lr>[for*=\"Siz\"]+select>option')[${startValue}].textContent",
+          "targets": [],
+          "value": "outputValue"
+        },
+        {
+          "id": "c5b63a23-b021-42c6-b415-d0af32769441",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return Math.floor(${startValue})+1",
+          "targets": [],
+          "value": "startValue"
+        },
+        {
+          "id": "c7dc0e8a-3bca-43d8-8eff-a3ec0287e6cb",
+          "comment": "",
+          "command": "echo",
+          "target": "${outputValue}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2a3e0825-aa29-439b-8882-5e94bc673ac1",
+          "comment": "",
+          "command": "end",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "d5f1d5e8-511c-45cc-a1fb-6d4ae0fc42bd",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": []
+    }
+  ],
+  "urls": [
+    "https://www.mountainmikespizza.com/"
+  ],
+  "plugins": []
+}
